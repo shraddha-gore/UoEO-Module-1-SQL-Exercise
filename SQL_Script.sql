@@ -1,6 +1,10 @@
 /* Use the default 'sys' schema */
 USE sys;
 
+/* Drop the existing tables */
+DROP TABLE IF EXISTS EMP;
+DROP TABLE IF EXISTS DEPT; 
+
 /* Create 'DEPT' table and add records */
 CREATE TABLE DEPT (
     DEPTNO INT PRIMARY KEY,
